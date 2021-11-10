@@ -8,10 +8,12 @@ function App() {
        <Router>
                 {/* <Header /> */}
                 <Routes>
-                  
-                    <Route exact path="/">
+
+                <Route path="/" element={<Home />} />
+                   
+                    {/* <Route exact path="/home">
                         <Home />
-                    </Route>
+                    </Route> */}
 
                     {/* <Route path="/articles">
                         <Articles />
