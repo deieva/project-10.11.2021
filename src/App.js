@@ -13,17 +13,6 @@ function App() {
 
                 <Route path="/" element={<Home />} />
                    
-                    {/* <Route exact path="/home">
-                        <Home />
-                    </Route> */}
-
-                    {/* <Route path="/articles">
-                        <Articles />
-                    </Route> */}
-
-                    {/* <Route>
-                        <Page404 />
-                    </Route> */}
 
                 </Routes>
                 <Footer />
