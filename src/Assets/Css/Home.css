@@ -3,7 +3,7 @@ html {
   }
   
   body {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     font-size: 1.6rem;
     font-family: sans-serif;
   }
@@ -11,7 +11,7 @@ html {
   *,
   *::before,
   *::after {
-    margin: 0;
+    margin: 5px;
     padding: 0;
     box-sizing: inherit;
   }
