@@ -2,15 +2,15 @@ html {
     font-size: 62.5%;
   }
   
-  body {
+  .container {
     /* box-sizing: border-box; */
     font-size: 1.6rem;
     font-family: sans-serif;
   }
   
-  *,
-  *::before,
-  *::after {
+  
+  .container::before,
+  .container::after {
     margin: 5px;
     padding: 0;
     box-sizing: inherit;
@@ -54,5 +54,6 @@ html {
   .container {
     min-height: 100vh;
     padding-top: 5rem;
+    margin-top: 10px;
     background: #fff3e0;
   }
