@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import '../Assets/Css/Header.css';
 function Header() {
   return (
@@ -17,7 +18,8 @@ function Header() {
         <rightie>
           <menu>
             <menu-item>
-              WHO WE ARE
+              <a href='/whoweare'>WHO WE ARE</a>
+             
             </menu-item>
             <menu-item>
               HOW WE CAN HELP
