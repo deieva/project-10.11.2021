@@ -8,11 +8,11 @@ function Home() {
           <clickable>FIND OUT HOW</clickable>
         </secret>
         <leftie><text>FIND US ON SOCIALS</text>
-          <icon class="bi bi-facebook"></icon>
-          <icon class="bi bi-twitter"></icon>
-          <icon class="bi bi-linkedin"></icon>
-          <icon class="bi bi-instagram"></icon>
-          <icon class="bi bi-discord"></icon>
+          <icon className="bi bi-facebook"></icon>
+          <icon className="bi bi-twitter"></icon>
+          <icon className="bi bi-linkedin"></icon>
+          <icon className="bi bi-instagram"></icon>
+          <icon className="bi bi-discord"></icon>
         </leftie>
         <rightie>
           <menu>
