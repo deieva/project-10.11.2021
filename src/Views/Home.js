@@ -18,7 +18,6 @@ function Home() {
                     <menu>
                         <menu-item>
                             <a href='/whoweare'>WHO WE ARE</a>
-
                         </menu-item>
                         <menu-item>
                             HOW WE CAN HELP
