@@ -17,7 +17,7 @@ function Home() {
                 <rightie>
                     <menu>
                         <menu-item>
-                            <a href='/whoweare'>WHO WE ARE</a>
+                            <a href='/whoweare' className='home-links'>WHO WE ARE</a>
                         </menu-item>
                         <menu-item>
                             HOW WE CAN HELP
