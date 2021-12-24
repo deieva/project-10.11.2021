@@ -18,6 +18,10 @@ html {
   background: #edffd3;
 } */
 
+body {
+  overflow-x: hidden;
+}
+
 container,
 container::after {
   width: 100%;
@@ -271,3 +275,5 @@ menu-item:hover {
   text-decoration: 1px solid underline darkgreen;
   transition: all 0.3s ease-in-out;
 }
+
+
