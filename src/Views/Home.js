@@ -2,7 +2,7 @@ import '../Assets/Css/Home.css';
 function Home() {
     return (
         <div>
-            <container>
+            <container className="home-container">
                 <zoomer>Hover to Enter</zoomer>
                 <secret>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent semper feugiat nibh sed pulvinar proin gravida. Diam donec adipiscing tristique risus nec feugiat.
                     <clickable>FIND OUT HOW</clickable>
