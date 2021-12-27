@@ -3,12 +3,13 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Views/Home';
 import Footer from './Components/Footer';
 import WhoWeAre from './Views/WhoWeAre';
+import Header from './Components/Header';
 
 function App() {
   return (
     <div>
        <Router>
-                {/* <Header /> */}
+                <Header />
                 <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/whoweare" element={<WhoWeAre />} />
