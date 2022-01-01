@@ -10,15 +10,15 @@ function Header() {
                     <nav id="headerNavigationId" className="header-navigation">
                         <input type="radio" name="headerNavigation" id="nav-1" checked />
                         <label className="nav-item" for="nav-1" data="Home">
-                            <i className="nav-icon fa fa-codepen"></i>
+                            <i className="nav-icon fa fa-home"></i>
                         </label>
                         <input type="radio" name="headerNavigation" id="nav-2" />
                         <label className="nav-item" for="nav-2" data="How we can help">
-                            <i className="nav-icon fa fa-github"></i>
+                            <i className="nav-icon fa fa-support"></i>
                         </label>
                         <input type="radio" name="headerNavigation" id="nav-3" />
                         <label className="nav-item" for="nav-3" data="Projects">
-                            <i className="nav-icon fa fa-linkedin"></i>
+                            <i className="nav-icon fa fa-projects"></i>
                         </label>
                         <input type="radio" name="headerNavigation" id="nav-4" />
                         <label className="nav-item" for="nav-4" data="History">
