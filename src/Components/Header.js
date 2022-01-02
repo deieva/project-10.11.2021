@@ -14,23 +14,23 @@ function Header() {
                         </label>
                         <input type="radio" name="headerNavigation" id="nav-2" />
                         <label className="nav-item" for="nav-2" data="How we can help">
-                            <i className="nav-icon fa fa-support"></i>
+                            <i className="nav-icon fa fa-heart"></i>
                         </label>
                         <input type="radio" name="headerNavigation" id="nav-3" />
                         <label className="nav-item" for="nav-3" data="Projects">
-                            <i className="nav-icon fa fa-projects"></i>
+                            <i className="nav-icon fa fa-globe"></i>
                         </label>
                         <input type="radio" name="headerNavigation" id="nav-4" />
                         <label className="nav-item" for="nav-4" data="History">
-                            <i className="nav-icon fa fa-instagram"></i>
+                            <i className="nav-icon fa fa-map"></i>
                         </label>
                         <input type="radio" name="headerNavigation" id="nav-5" />
                         <label className="nav-item" for="nav-5" data="Testimonials">
-                            <i className="nav-icon fa fa-facebook"></i>
+                            <i className="nav-icon fa fa-pencil"></i>
                         </label>
                         <input type="radio" name="headerNavigation" id="nav-5" />
                         <label className="nav-item" for="nav-5" data="Get in touch">
-                            <i className="nav-icon fa fa-facebook"></i>
+                            <i className="nav-icon fa fa-info"></i>
                         </label>
                     </nav>
                 </div>
