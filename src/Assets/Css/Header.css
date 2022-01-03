@@ -218,6 +218,7 @@
       box-shadow: 4px 4px 8px var(--secondary-color-darker), -2px -2px 4px var(--secondary-color);
       border-radius: 16px;
       animation: swingdown 1s ease;
+      z-index: 1;
     }
     body .neumorphic-header .navigation-container #navHandlerId:checked ~ .header-navigation .nav-item {
       padding: 2px 8px;
