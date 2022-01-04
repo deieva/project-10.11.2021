@@ -20,7 +20,7 @@ function Home() {
                             <a href='/whoweare' className='home-links'>WHO WE ARE</a>
                         </menu-item>
                         <menu-item>
-                            HOW WE CAN HELP
+                           <a href='/howwecanhelp' className='home-links'> HOW WE CAN HELP</a>
                         </menu-item>
                         <menu-item>
                             PROJECTS
