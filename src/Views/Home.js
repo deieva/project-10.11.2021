@@ -23,7 +23,7 @@ function Home() {
                            <a href='/howwecanhelp' className='home-links'> HOW WE CAN HELP</a>
                         </menu-item>
                         <menu-item>
-                            PROJECTS
+                        <a href='/projects' className='home-links'> PROJECTS</a>
                         </menu-item>
                         <menu-item>
                             HISTORY
