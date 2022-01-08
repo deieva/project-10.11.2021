@@ -26,13 +26,13 @@ function Home() {
                         <a href='/projects' className='home-links'> PROJECTS</a>
                         </menu-item>
                         <menu-item>
-                            HISTORY
+                        <a href='/projects' className='home-links'> HISTORY</a>
                         </menu-item>
                         <menu-item>
-                            TESTIMONIALS
+                        <a href='/projects' className='home-links'> TESTIMONIALS</a>
                         </menu-item>
                         <menu-item>
-                            GET IN TOUCH
+                        <a href='/projects' className='home-links'> GET IN TOUCH</a>
                         </menu-item>
                     </menu>
                 </rightie>
