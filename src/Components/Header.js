@@ -9,11 +9,11 @@ function Header() {
                     <label className="header-menu-icon fa fa-bars" for="navHandlerId"></label>
                     <nav id="headerNavigationId" className="header-navigation">
 
-                        <input type="radio" name="headerNavigation" id="nav-1" checked />
+                        <input type="radio" name="headerNavigation" id="nav-1" checked/>
                         <label className="nav-item" for="nav-1" data="Home">
                             <i className="nav-icon fa fa-home"></i>
                         </label>
-                        <input type="radio" name="headerNavigation" id="nav-2" />
+                        <input type="radio" name="headerNavigation" id="nav-2"/>
                         <label className="nav-item" for="nav-2" data="Who we are">
                             <i className="nav-icon fa fa-star"></i>
                         </label>
