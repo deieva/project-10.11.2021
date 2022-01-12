@@ -249,3 +249,8 @@
       transform-origin: 50% 0%;
     }
   }
+
+  .header-links {
+    font-size: 20px!important;
+    color: darkcyan!important;
+  }
