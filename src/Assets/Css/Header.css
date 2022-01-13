@@ -252,5 +252,9 @@
 
   .header-links {
     font-size: 20px!important;
-    
+    color: rgb(175, 110, 172);
+  }
+
+  .header-links:hover {
+    color: limegreen;
   }
