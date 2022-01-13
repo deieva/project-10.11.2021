@@ -15,7 +15,7 @@ function Header() {
                         </label>
                         <input type="radio" name="headerNavigation" id="nav-2"/>
                         <label className="nav-item" for="nav-2">
-                            <i className="nav-icon header links fa fa-star"><a href='/whoweare'>Who we are</a></i>
+                            <i className="nav-icon header-links fa fa-star"><a href='/whoweare'>Who we are</a></i>
                         </label>
                         <input type="radio" name="headerNavigation" id="nav-3" />
                         <label className="nav-item" for="nav-3">
