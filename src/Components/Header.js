@@ -29,15 +29,15 @@ function Header() {
                         <label className="nav-item" for="nav-5" >
                             <i className="nav-icon fa fa-map"><a href='/history' className='header-links'>History</a></i>
                         </label>
-                        <a>
+                        <a href='/testimonials'>
                         <input type="radio" name="headerNavigation" id="nav-6" />
-                        <label className="nav-item" for="nav-6" >
-                            <i className="nav-icon fa fa-pencil"><a href='/testimonials' className='header-links'>Testimonials</a></i>
+                        <label className="nav-item" for="nav-6" data="Testimonials">
+                            <i className="nav-icon fa fa-pencil"></i>
                         </label>
                         </a>
-                        <a href='/getintouch'>
+                        <a href='/getintouch' className='nav-icon'>
                         <input type="radio" name="headerNavigation" id="nav-7" />
-                        <label className="nav-item" for="nav-7" data="Get in touch">
+                        <label className="nav-item nav-icon" for="nav-7" data="Get in touch">
                             <i className="nav-icon  fa fa-info"></i>
                         </label>
                         </a>
