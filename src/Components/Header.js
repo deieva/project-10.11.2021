@@ -35,12 +35,12 @@ function Header() {
                             <i className="nav-icon fa fa-pencil"></i>
                         </label>
                         </a>
-                        <a href='/getintouch' className='nav-icon'>
+                        <span href='/getintouch'>
                         <input type="radio" name="headerNavigation" id="nav-7" />
                         <label className="nav-item nav-icon" for="nav-7" data="Get in touch">
                             <i className="nav-icon  fa fa-info"></i>
                         </label>
-                        </a>
+                        </span>
                     </nav>
                 </div>
             </header>
