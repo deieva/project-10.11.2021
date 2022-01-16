@@ -1,3 +1,5 @@
+import '../Assets/Css/HowWeCanHelp.css';
+
 function HowWeCanHelp() {
 
     return (
