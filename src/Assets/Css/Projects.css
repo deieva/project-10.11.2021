@@ -41,7 +41,7 @@ body {
   overflow: hidden;
 } */
 
-body {
+.projects-container {
   background: linear-gradient(to bottom, #edf1f2, #d5e2f2);
   justify-content: center;
   align-items: center;

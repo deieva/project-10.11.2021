@@ -1,6 +1,46 @@
 import '../Assets/Css/Projects.css';
 function Projects() {
+    window.onload = () => {
+    let voiceList = document.getElementById("voiceList");
+    let txtInput = document.getElementById("txtInput");
+    let btnSpeak = document.getElementById("btnSpeak");
+    
+    let tts = window.speechSynthesis;
+    let voices = [];
+    
+    getVoices();
+    
+    if (speechSynthesis !== undefined) {
+      speechSynthesis.onvoiceschanged = getVoices;
+    }
+    
+    btnSpeak.addEventListener("click", () => {
+      let toSpeak = new SpeechSynthesisUtterance(txtInput.value);
+      let selectedVoiceName = voiceList.selectedOptions[0].getAttribute(
+        "data-name"
+      );
+      voices.forEach((voice) => {
+        if (voice.name === selectedVoiceName) {
+          toSpeak.voice = voice;
+        }
+      });
+      tts.speak(toSpeak);
+    });
+    
+    function getVoices() {
+      voices = tts.getVoices();
+      voiceList.innerHTML = "";
+      voices.forEach((voice) => {
+        let item = document.createElement("option");
+        item.textContent = voice.name;
+        item.setAttribute("data-lang", voice.lang);
+        item.setAttribute("data-name", voice.name);
+        voiceList.appendChild(item);
+      });
+      voiceList.selectedIndex = 0;
+    }
 
+}
     return (
         <div className='projects-container'>
             <div class="slick-slider">
