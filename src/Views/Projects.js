@@ -20,7 +20,7 @@ function Projects() {
                             </div>
                             <div class="font-description">
                                 <h2 class="font--robotoslab">Text<span class="font--roboto"> to Speech</span></h2>
-                                <p class="font--roboto">This project allows you to convert text to speech in a single click. Just type what you want and it is converted to speech. Feel free to use it in other projects. This is just a demonstration of how this can be achieved via Vanilla JS.</p>
+                                <p class="font--roboto">This project allows you to convert text to speech in a single click. Just type what you want and it is converted to speech.</p>
                             </div>
                             </div>
                     </div>
