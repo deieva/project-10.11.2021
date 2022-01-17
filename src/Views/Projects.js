@@ -2,7 +2,7 @@ import '../Assets/Css/Projects.css';
 function Projects() {
 
     return (
-        <div>
+        <div className='projects-container'>
             <div class="slick-slider">
 
                 <div class="full-card">
