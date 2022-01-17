@@ -1,3 +1,4 @@
+import '../Assets/Css/Projects.css';
 function Projects() {
 
     return (
