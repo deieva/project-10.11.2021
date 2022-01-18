@@ -1,3 +1,4 @@
+import '../Assets/Css/History.css';
 function History() {
 
     return (
