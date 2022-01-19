@@ -1,8 +1,13 @@
 import '../Assets/Css/History.css';
-import * as THREE from "https://cdn.skypack.dev/three@0.132.2";
-import { TrackballControls } from "https://cdn.skypack.dev/three@0.132.2/examples/jsm/controls/TrackballControls.js";
-import { OBJLoader } from "https://cdn.skypack.dev/three@0.132.2/examples/jsm/loaders/OBJLoader.js";
-import { MeshSurfaceSampler } from "https://cdn.skypack.dev/three@0.132.2/examples/jsm/math/MeshSurfaceSampler.js";
+// import * as THREE from "https://cdn.skypack.dev/three@0.132.2";
+// import { TrackballControls } from "https://cdn.skypack.dev/three@0.132.2/examples/jsm/controls/TrackballControls.js";
+// import { OBJLoader } from "https://cdn.skypack.dev/three@0.132.2/examples/jsm/loaders/OBJLoader.js";
+// import { MeshSurfaceSampler } from "https://cdn.skypack.dev/three@0.132.2/examples/jsm/math/MeshSurfaceSampler.js";
+
+let THREE;
+let TrackballControls;
+let OBJLoader;
+let MeshSurfaceSampler;
 function History() {
     
     
@@ -171,8 +176,7 @@ function History() {
         }
     }
     
-    const look = new THREE.Vector3(0, 0, 0);
-    function render(a) {
+    function render(_a) {
         // Rotate the whole scene
         group.rotation.y += 0.001;
     
