@@ -4,12 +4,15 @@ import '../Assets/Css/History.css';
 // import { OBJLoader } from "https://cdn.skypack.dev/three@0.132.2/examples/jsm/loaders/OBJLoader.js";
 // import { MeshSurfaceSampler } from "https://cdn.skypack.dev/three@0.132.2/examples/jsm/math/MeshSurfaceSampler.js";
 
-let THREE;
-let TrackballControls;
+import * as THREE from 'three';
+import TrackballControls from 'three-trackballcontrols';
+
+// let THREE;
+// let TrackballControls;
 let OBJLoader;
 let MeshSurfaceSampler;
+
 function History() {
-    
     
     console.clear();
     window.THREE = THREE;
