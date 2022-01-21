@@ -6,12 +6,12 @@ function History() {
     
     for (index2 = 0; index2 < acc2.length; index2++) {
       acc2[index2].addEventListener("click", function () {
-        this.classList.toggle("active");
-        let panel = this.nextElementSibling;
-        if (panel.style.maxHeight) {
-          panel.style.maxHeight = null;
+        this.classList.toggle("active2");
+        let panel2 = this.nextElementSibling;
+        if (panel2.style.maxHeight) {
+          panel2.style.maxHeight = null;
         } else {
-          panel.style.maxHeight = panel.scrollHeight + "px";
+          panel2.style.maxHeight = panel2.scrollHeight + "px";
         }
       });
     }
