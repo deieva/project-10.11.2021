@@ -16,7 +16,7 @@
     text-align: center;
   }
   
-  .accordion {
+  .accordion2 {
     background-color: #eee;
     color: #444;
     cursor: pointer;
@@ -29,11 +29,11 @@
     transition: 0.4s;
   }
   
-  .active, .accordion:hover {
+  .active, .accordion2:hover {
     background-color: #ccc;
   }
   
-  .accordion:after {
+  .accordion2:after {
     content: '\02C5';
     font-size: 13px;
     color: #777;
