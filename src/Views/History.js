@@ -1,13 +1,13 @@
 import '../Assets/Css/History.css';
 
 function History() {
-    var acc = document.getElementsByClassName("accordion2");
-    var i;
+    let acc2 = document.getElementsByClassName("accordion2");
+    let index2;
     
-    for (i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", function () {
+    for (index2 = 0; index2 < acc2.length; index2++) {
+      acc2[index2].addEventListener("click", function () {
         this.classList.toggle("active");
-        var panel = this.nextElementSibling;
+        let panel = this.nextElementSibling;
         if (panel.style.maxHeight) {
           panel.style.maxHeight = null;
         } else {
