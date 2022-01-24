@@ -84,20 +84,20 @@ function History() {
             //on swipe, show next/prev event content
             timelineComponents["eventsContent"].on("swipetop", function () {
               var mq = checkMQ();
-              mq == "mobile" &&
+              mq === "mobile" &&
                 showNewContent(timelineComponents, timelineTotheight, "next");
             });
             timelineComponents["eventsContent"].on("swiperight", function () {
               var mq = checkMQ();
-              mq == "mobile" &&
+              mq === "mobile" &&
                 showNewContent(timelineComponents, timelineTotheight, "prev");
             });
       
             //keyboard navigation
             $(document).on(function (event) {
-              if (event.which == "37" && elementInViewport(timeline.get(0))) {
+              if (event.which === "37" && elementInViewport(timeline.get(0))) {
                 showNewContent(timelineComponents, timelineTotheight, "prev");
-              } else if (event.which == "39" && elementInViewport(timeline.get(0))) {
+              } else if (event.which === "39" && elementInViewport(timeline.get(0))) {
                 showNewContent(timelineComponents, timelineTotheight, "next");
               }
             });
@@ -111,7 +111,7 @@ function History() {
               timelineComponents["timelineWrapper"].css("height").replace("px", "")
             );
           //translate the timeline to the top('next')/right('prev')
-          string == "next"
+          string === "next"
             ? translateTimeline(
                 timelineComponents,
                 translateValue - wrapperheight + eventsMinDistance,
@@ -127,13 +127,13 @@ function History() {
           //go from one event to the next/previous one
           var visibleContent = timelineComponents["eventsContent"].find(".selected"),
             newContent =
-              string == "next" ? visibleContent.next() : visibleContent.prev();
+              string === "next" ? visibleContent.next() : visibleContent.prev();
       
           if (newContent.length > 0) {
             //if there's a next/prev event - show it
             var selectedDate = timelineComponents["eventsWrapper"].find(".selected"),
               newEvent =
-                string == "next"
+                string === "next"
                   ? selectedDate.parent("li").next("li").children("a")
                   : selectedDate.parent("li").prev("li").children("a");
       
@@ -175,8 +175,8 @@ function History() {
           );
       
           if (
-            (string == "next" && eventtop > timelineheight - timelineTranslate) ||
-            (string == "prev" && eventtop < -timelineTranslate)
+            (string === "next" && eventtop > timelineheight - timelineTranslate) ||
+            (string === "prev" && eventtop < -timelineTranslate)
           ) {
             translateTimeline(
               timelineComponents,
@@ -195,7 +195,7 @@ function History() {
               : value; //do not translate more than timeline height
           setTransformValue(eventsWrapper, "translateY", value + "px");
           //update navigation arrows visibility
-          value == 0
+          value === 0
             ? timelineComponents["timelineNavigation"]
                 .find(".prev")
                 .addClass("inactive")
