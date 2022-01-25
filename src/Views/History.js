@@ -326,7 +326,6 @@ function History() {
           element.style["transform"] = property + "(" + value + ")";
         }
       
-        //based on http://stackoverflow.com/questions/542938/how-do-i-get-the-number-of-days-between-two-dates-in-javascript
         function parseDate(events) {
           var dateArrays = [];
           events.each(function () {
@@ -343,7 +342,6 @@ function History() {
         }
       
         function minLapse(dates) {
-          //determine the minimum distance among events
           var dateDistances = [];
           for (i = 1; i < dates.length; i++) {
             var distance = daydiff(dates[i - 1], dates[i]);
@@ -351,36 +349,6 @@ function History() {
           }
           return Math.min.apply(null, dateDistances);
         }
-      
-        /*
-              How to tell if a DOM element is visible in the current viewport?
-              http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
-          */
-        /*function elementInViewport(el) {
-              var top = el.offsetTop;
-              var top = el.offsettop;
-              var height = el.offsetheight;
-              var height = el.offsetHeight;
-      
-              while(el.offsetParent) {
-                  el = el.offsetParent;
-                  top += el.offsetTop;
-                  top += el.offsettop;
-              }
-      
-              return (
-                  top < (window.pageYOffset + window.innerHeight) &&
-                  top < (window.pageXOffset + window.innerheight) &&
-                  (top + height) > window.pageYOffset &&
-                  (top + height) > window.pageXOffset
-              );
-          }*/
-      
-        //check if mobile or desktop device
-        /*function checkMQ() {
-              return window.getComputedStyle(document.querySelector('.cd-horizontal-timeline'), '::before').getPropertyValue('content').replace(/'/g, "").replace(/"/g, "");
-          }*/
-     
       
 
     return (
