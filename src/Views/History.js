@@ -188,13 +188,13 @@ function History() {
       
         function translateTimeline(timelineComponents, value, totheight) {
           var eventsWrapper = timelineComponents["eventsWrapper"].get(0);
-          value = value > 0 ? 0 : value; //only negative translate value
+          value = value > 0 ? 0 : value; 
           value =
             !(typeof totheight === "undefined") && value < totheight
               ? totheight
-              : value; //do not translate more than timeline height
+              : value; 
           setTransformValue(eventsWrapper, "translateY", value + "px");
-          //update navigation arrows visibility
+          
           value === 0
             ? timelineComponents["timelineNavigation"]
                 .find(".prev")
@@ -202,7 +202,7 @@ function History() {
             : timelineComponents["timelineNavigation"]
                 .find(".prev")
                 .removeClass("inactive");
-          value == totheight
+          value === totheight
             ? timelineComponents["timelineNavigation"]
                 .find(".next")
                 .addClass("inactive")
@@ -212,7 +212,7 @@ function History() {
         }
       
         function updateFilling(selectedEvent, filling, totheight) {
-          //change .filling-line length according to the selected event
+         
           var eventStyle = window.getComputedStyle(selectedEvent.get(0), null),
             eventtop = eventStyle.getPropertyValue("top"),
             eventheight = eventStyle.getPropertyValue("height");
