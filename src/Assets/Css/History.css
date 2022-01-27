@@ -203,7 +203,6 @@ Main Components
   -ms-transform: translateY(-50%) translateY(-50%);
   -o-transform: translateY(-50%) translateY(-50%);
   transform: translateY(-50%) translateY(-50%);
-  /* background: url(../img/cd-arrow.svg) no-repeat 0 0; */
 }
 .cd-timeline-navigation a.prev {
   left: 0;
@@ -232,7 +231,6 @@ Main Components
 .cd-horizontal-timeline .events-content {
   position: relative;
   width: 100%;
-  /* margin: 2em 0; */
   overflow: hidden;
   -webkit-transition: height 0.4s;
   -moz-transition: height 0.4s;
@@ -249,7 +247,6 @@ Main Components
   -ms-transform: translateY(-100%);
   -o-transform: translateY(-100%);
   transform: translateY(-100%);
-  /* padding: 0 5%; */
   opacity: 0;
   -webkit-animation-duration: 0.4s;
   -moz-animation-duration: 0.4s;
@@ -259,7 +256,6 @@ Main Components
   animation-timing-function: ease-in-out;
 }
 .cd-horizontal-timeline .events-content li.selected {
-  /* visible event content */
   position: relative;
   z-index: 2;
   opacity: 1;
@@ -287,13 +283,7 @@ Main Components
   -moz-animation-direction: reverse;
   animation-direction: reverse;
 }
-/* .cd-horizontal-timeline .events-content h2 {
-  font-weight: bold;
-  font-size: 2.6rem;
-  font-family: "Playfair Display", serif;
-  font-weight: 700;
-  line-height: 1.2;
-} */
+
 .cd-horizontal-timeline .events-content em {
   display: block;
   font-style: italic;
@@ -302,13 +292,7 @@ Main Components
 .cd-horizontal-timeline .events-content em::before {
   content: "- ";
 }
-/* .cd-horizontal-timeline .events-content p {
-  font-size: 1.4rem;
-  color: #959595;
-}
-.cd-horizontal-timeline .events-content em, .cd-horizontal-timeline .events-content p {
-  line-height: 1.6;
-} */
+
 @media only screen and (min-width: 768px) {
   /* .cd-horizontal-timeline .events-content h2 {
     font-size: 7rem;
