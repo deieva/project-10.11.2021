@@ -161,17 +161,13 @@ Main Components
   border-color: #00acee;
 }
 @media only screen and (min-width: 1100px) {
-  /* .cd-horizontal-timeline {
-    margin: 6em auto;
-  } */
+  
   .cd-horizontal-timeline::before {
-    /* never visible - this is used in jQuery to check the current MQ */
     content: "desktop";
   }
 }
 
 .cd-timeline-navigation a {
-  /* these are the left/right arrows to navigate the timeline */
   position: absolute;
   z-index: 1;
   top: 50%;
@@ -185,7 +181,6 @@ Main Components
   width: 34px;
   border-radius: 50%;
   border: 2px solid #dfdfdf;
-  /* replace text with an icon */
   overflow: hidden;
   color: transparent;
   text-indent: 100%;
@@ -195,7 +190,6 @@ Main Components
   transition: border-color 0.3s;
 }
 .cd-timeline-navigation a::after {
-  /* arrow icon */
   content: "";
   position: absolute;
   height: 16px;
