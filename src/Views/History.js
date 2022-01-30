@@ -271,9 +271,9 @@ function History() {
         classLeaving = "leave-right";
     }
 
-    selectedContent.attr("class", classEnetering);
+    selectedContent.attr("className", classEnetering);
     visibleContent
-      .attr("class", classLeaving)
+      .attr("className", classLeaving)
       .one(
         "webkitAnimationEnd oanimationend msAnimationEnd animationend",
         function () {
@@ -353,12 +353,12 @@ function History() {
 
   return (
     <div>
-      <section class="cd-horizontal-timeline">
-        <div class="timeline">
-          <div class="events-wrapper">
-            <div class="events">
+      <section className="cd-horizontal-timeline">
+        <div className="timeline">
+          <div className="events-wrapper">
+            <div className="events">
               <ol>
-                <li><a href="#0" data-date="16/01/1997" class="selected">1997 - 2001</a></li>
+                <li><a href="#0" data-date="16/01/1997" className="selected">1997 - 2001</a></li>
                 <li><a href="#0" data-date="28/02/2001">2001 - 2002</a></li>
                 <li><a href="#0" data-date="20/04/2002">2002 - 2005</a></li>
                 <li><a href="#0" data-date="20/05/2006">2006</a></li>
@@ -371,22 +371,22 @@ function History() {
                 <li><a href="#0" data-date="21/03/2016">2016</a></li>
               </ol>
 
-              <span class="filling-line" aria-hidden="true"></span>
+              <span className="filling-line" aria-hidden="true"></span>
             </div>
           </div>
-          <ul class="cd-timeline-navigation">
-            <li><a href="#0" class="prev inactive">
+          <ul className="cd-timeline-navigation">
+            <li><a href="#0" className="prev inactive">
               <p>&#x21E9</p>
             </a></li>
-            <li><a href="#0" class="next">
+            <li><a href="#0" className="next">
               <p>&#x21E9</p>
             </a></li>
           </ul>
         </div>
 
-        <div class="events-content">
+        <div className="events-content">
           <ol>
-            <li class="selected" data-date="16/01/1997">
+            <li className="selected" data-date="16/01/1997">
               <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </li>
