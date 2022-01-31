@@ -1,0 +1,101 @@
+:root {
+  --line-size: 0.3rem;
+  --line-color: #00ccff;
+  --line-circle-size: 1rem;
+  --line-circle-color: #00ccff;
+  --line-circle-border-size: 2px;
+  --card-margin: 2rem;
+  --card-max-width: 300px;
+  --card-border-color: #00ccff;
+  --card-background: #b4edfc;
+  --card-text-color: #333333;
+  --card-arrow-size: 1rem;
+  --card-arrow-color: #00ccff;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.timeline {
+  margin: 2rem 0;
+  position: relative;
+  width: 100%;
+  min-height: 500px;
+  margin: 0 auto;
+}
+.timeline::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: calc((50% - var(--line-size)) + var(--line-size) / 2);
+  border-left: var(--line-size) solid var(--line-color);
+}
+.timeline .timeline-left,
+.timeline .timeline-right {
+  margin-top: 1rem;
+  padding-top: 1.9rem;
+  position: relative;
+  display: flex;
+}
+.timeline .timeline-left::before,
+.timeline .timeline-right::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0rem;
+  width: var(--line-circle-size);
+  height: var(--line-circle-size);
+  border-radius: 20rem;
+  border: var(--line-circle-border-size) solid var(--line-circle-color);
+  background: #ffffff;
+  z-index: 10;
+}
+.timeline .timeline-left {
+  padding-right: calc( var(--card-margin) + var(--line-size) * 2 );
+  width: calc((50% - var(--line-size)) + var(--line-size) / 2);
+  justify-content: end;
+}
+.timeline .timeline-left::before {
+  right: calc( -0.5rem - var(--line-circle-border-size) - (var(--line-size) / 2) );
+}
+.timeline .timeline-right {
+  padding-left: calc( var(--card-margin) + var(--line-size) * 2 );
+  margin-left: calc(50% + var(--line-size) - (var(--line-size) / 2));
+  width: calc(50% - var(--line-size) + (var(--line-size) / 2));
+}
+.timeline .timeline-right::before {
+  left: calc( -0.5rem - var(--line-circle-border-size) - (var(--line-size) / 2) );
+}
+.timeline .card {
+  position: relative;
+  padding: 1rem;
+  border: 1px solid var(--card-border-color);
+  border-radius: 0.5rem;
+  background: var(--card-background);
+  color: var(--card-text-color);
+  width: 100%;
+  max-width: var(--card-max-width);
+  z-index: 20;
+}
+.timeline .card.left::before, .timeline .card.right::before {
+  content: "";
+  position: absolute;
+  top: calc(50% - var(--card-arrow-size));
+  display: block;
+  border: var(--card-arrow-size) solid var(--card-arrow-color);
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+}
+.timeline .card.left::before {
+  right: -2rem;
+  border-right-color: transparent;
+}
+.timeline .card.right::before {
+  left: -2rem;
+  border-left-color: transparent;
+}
