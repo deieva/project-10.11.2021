@@ -4,7 +4,7 @@ function Header() {
     return (
         <div>
             <header>
-                <a href="#" class="logo">
+                <a href="/" class="logo">
                     <img src="https://1.bp.blogspot.com/-FSJpfNUfiwQ/YVmBlwUDTuI/AAAAAAAABA8/UJWwUNLmi8A-dbv_FAwXhnnOh93BsJiAgCLcBGAsYHQ/s320/logo2.png" />
                     <h1>Online store</h1>
                 </a>
@@ -15,10 +15,13 @@ function Header() {
                 </label>
                 <div class="links">
                     <div>
-                        <a href="#">Home</a>
-                        <a href="#">Content</a>
-                        <a href="#">Profile</a>
-                        <a href="#">About</a>
+                        <a href="/">Home</a>
+                        <a href="/whoweare">Who we are</a>
+                        <a href="/howwecanhelp">How we can help</a>
+                        <a href="/projects">Projects</a>
+                        <a href="/history">History</a>
+                        <a href="/testimonials">Testimonials</a>
+                        <a href="/getintouch">Get in touch</a>
                     </div>
                 </div>
             </header>
