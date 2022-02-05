@@ -3,9 +3,6 @@ body {
     width: 100%;
   }
   
-  /* body * {
-    box-sizing: border-box;
-  } */
   
   .boxes {
     display: flex;
