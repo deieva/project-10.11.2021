@@ -33,14 +33,6 @@
   box-sizing: border-box;
 }
 
-/* html,
-body {
-  height: 100%;
-  font-family: "Roboto", Georgia, sans-serif;
-  font-weight: 400;
-  overflow: hidden;
-} */
-
 .projects-container {
   background: linear-gradient(to bottom, #edf1f2, #d5e2f2);
   justify-content: center;
