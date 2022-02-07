@@ -9,7 +9,6 @@ import Projects from './Views/Projects';
 import History from './Views/History';
 import Testimonials from './Views/Testimonials';
 import Getintouch from './Views/Getintouch';
-
 function App() {
   return (
     <div>
@@ -23,12 +22,10 @@ function App() {
                 <Route path="/history" element={<History />} />
                 <Route path="/testimonials" element={<Testimonials />} />
                 <Route path="/getintouch" element={<Getintouch />} />
-
                 </Routes>
                 <Footer />
             </Router>
     </div>
   );
 }
-
 export default App;
