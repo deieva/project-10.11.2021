@@ -9,6 +9,7 @@ import Projects from './Views/Projects';
 import History from './Views/History';
 import Testimonials from './Views/Testimonials';
 import Getintouch from './Views/Getintouch';
+import Page404 from './Views/Page404';
 function App() {
   return (
     <div>
@@ -22,6 +23,7 @@ function App() {
                 <Route path="/history" element={<History />} />
                 <Route path="/testimonials" element={<Testimonials />} />
                 <Route path="/getintouch" element={<Getintouch />} />
+                <Route path="*" element={<Page404 /> } />
                 </Routes>
                 <Footer />
             </Router>
